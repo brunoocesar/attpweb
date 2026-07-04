@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Consultar Clima</h1>
+      <div class="search">
+        <input type="text" id="cidadeInput" placeholder="Digite a cidade..." />
+        <button onclick="buscarClima()">Buscar</button>
+      </div>
+
+      <div class="erro" id="erro">Cidade não encontrada.</div>
+
+      <div class="result" id="result">
+        <img class="icon" id="icone" src="" alt="" />
+        <div class="cidade" id="nomeCidade"></div>
+        <div class="temp" id="temperatura"></div>
+        <div class="desc" id="descricao"></div>
+        <div class="info">
+          <div>💧 <span id="umidade"></span>%</div>
+          <div>🌬️ <span id="vento"></span> km/h</div>
+          <div>🤔 Sensação <span id="sensacao"></span>°C</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #00b4d8;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background: #0096c7;
+}
+.result {
+  display: none;
+}
+.result.show {
+  display: block;
+}
+.cidade {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00b4d8;
+  margin: 10px 0;
+}
+.desc {
+  text-transform: capitalize;
+  color: #555;
+  margin-bottom: 10px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+.erro {
+  color: #e63946;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+.icon {
+  width: 90px;
+}
